@@ -21,7 +21,7 @@ after_success:
     - docker push abhipal786/multi-server
     - docker push abhipal786/multi-worker
 
-deploy:
+/*deploy:
     provider: elasticbeanstalk
     region: us-west-1
     app: multi-docker
@@ -34,3 +34,4 @@ deploy:
     secret_access_key:
         secure: $AWS_SECRET_KEY
         
+*/
