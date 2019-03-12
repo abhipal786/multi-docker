@@ -3,7 +3,7 @@ WORKDIR '/app'
 COPY ./package*.json ./
 RUN npm install
 COPY . .
-RUN nmp run build
+CMD ["nmp", "run", "build"]
 
 FROM nginx
 EXPOSE 3000
